@@ -11,7 +11,7 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: ismael
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: claveSegura123
+        value: ClaveSegura123
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_DATABASE
@@ -22,12 +22,12 @@ services:
         generateValue: true
       - key: DB_POSTGRESDB_HOST
         fromService:
-          type: database
+          type: internal_database
           name: postgres
           property: host
       - key: DB_POSTGRESDB_PORT
         fromService:
-          type: database
+          type: internal_database
           name: postgres
           property: port
 
