@@ -22,12 +22,12 @@ services:
         generateValue: true
       - key: DB_POSTGRESDB_HOST
         fromService:
-          type: database
+          type: pserv
           name: postgres
           property: host
       - key: DB_POSTGRESDB_PORT
         fromService:
-          type: database
+          type: pserv
           name: postgres
           property: port
 
